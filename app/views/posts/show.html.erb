@@ -1,5 +1,6 @@
 <h1><%= @post.title %></h1>
 
 <!-- Add code here to link to the post's category. -->
-
+<%# <%= link_to @post.category, "/categories/#{@post.category_id}"%> %>
+<a href= "/categories/<%=@post.category_id%>"> <%= @post.category.name%> </a>
 <p><%= @post.description %></p>
